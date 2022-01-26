@@ -1,13 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope&family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  width: 100vw;
+  font-family: "manrope", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "DM Serif Display";
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.img-cont {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem auto;
+  /* margin-top: 1rem; */
+}
+.outer-border {
+  border-left: 2px solid grey;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* padding: 0.5rem; */
+}
+.outer-border span {
+  background: url("./images/profile\ pics.jpeg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  border: 2px solid grey;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+}
+.outer-border:hover {
+  border-color: #1aa0fb;
+}
+.outer-border span:hover {
+  border-color: #1aa0fb;
+}
+.quote::before {
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid #ffd233;
+  position: relative;
+  top: 80px;
+  left: 325px;
+}
+.active {
+  border-left: 2px solid #ffd233;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.active span {
+  background: url("./images/profile\ pics.jpeg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  border: 2px solid #ffd233;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
 }
